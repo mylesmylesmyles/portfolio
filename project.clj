@@ -13,9 +13,10 @@
 
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/clojurescript "0.0-2138"]
-                 [ring "1.2.1"]
-                 [compojure "1.1.6"]
-                 [tailrecursion/javelin "2.4.0"]]
+                 [tailrecursion/javelin "3.1.0"]
+                 [domina "1.0.2-SNAPSHOT"]
+                 [prismatic/dommy "0.1.1"]
+                 [clj-http "0.7.9"]]
 
   :plugins [[lein-cljsbuild "1.0.1"]
             [lein-ring "0.8.7"]
@@ -23,12 +24,6 @@
 
   :hooks [leiningen.cljsbuild]
   
-  ; :ring {:handler portfolio.routes/app}
-  
-  ; :aot [portfolio.server]
-  
-  ; :main portfolio.server
-
   :cljsbuild
   {:builds {;; This build is only used for including any cljs source
             ;; in the packaged jar when you issue lein jar command and

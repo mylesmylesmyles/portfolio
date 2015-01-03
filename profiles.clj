@@ -13,7 +13,7 @@
 {:shared {:clean-targets ["out" :target-path]
           :test-paths ["test/clj" "test/cljs"]
           :resources-paths ["dev-resources"]
-          :repl-options {:timeout 120000}
+          :repl-options {:timeout 240000}
           :plugins [[com.cemerick/clojurescript.test "0.2.1"]]
           :cljsbuild
           {:builds {:portfolio
